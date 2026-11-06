@@ -19,6 +19,10 @@ class CTakeDamageInfoHack;
 SH_DECL_MANUALEXTERN1_void(MEvent_Killed, CTakeDamageInfoHack &);
 
 CGlobalVars* gpGlobals = nullptr;
+#ifdef _DEBUG
+// The SDK network-variable helpers reference this in Debug builds.
+bool g_bUseNetworkVars = true;
+#endif
 IGameConfig* g_pGameConf = nullptr;
 IBinTools* g_pBinTools = nullptr;
 ISDKTools* g_pSDKTools = nullptr;

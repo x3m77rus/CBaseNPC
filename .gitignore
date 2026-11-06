@@ -15,5 +15,5 @@ scripting/*.sp
 !scripting/cbasenpc_actiontest.sp
 gamedata/*.txt
 !gamedata/cbasenpc.txt
-build/
+build-*/
 *_build/
